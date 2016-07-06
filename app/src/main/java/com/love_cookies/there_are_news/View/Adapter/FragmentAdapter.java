@@ -1,4 +1,4 @@
-package com.love_cookies.there_are_news.View;
+package com.love_cookies.there_are_news.View.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

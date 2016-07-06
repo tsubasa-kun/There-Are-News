@@ -1,4 +1,4 @@
-package com.love_cookies.there_are_news.View;
+package com.love_cookies.there_are_news.View.Activity;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -18,6 +18,8 @@ import com.love_cookies.cookie_library.Activity.BaseActivity;
 import com.love_cookies.cookie_library.Application.ActivityCollections;
 import com.love_cookies.cookie_library.Utils.ToastUtils;
 import com.love_cookies.there_are_news.R;
+import com.love_cookies.there_are_news.View.Adapter.FragmentAdapter;
+import com.love_cookies.there_are_news.View.Fragment.ListFragment;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;

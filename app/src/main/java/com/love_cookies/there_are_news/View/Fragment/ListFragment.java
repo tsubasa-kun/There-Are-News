@@ -1,4 +1,4 @@
-package com.love_cookies.there_are_news.View;
+package com.love_cookies.there_are_news.View.Fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.love_cookies.there_are_news.R;
+import com.love_cookies.there_are_news.View.Adapter.RecyclerViewAdapter;
 
 import jp.wasabeef.recyclerview.adapters.AlphaInAnimationAdapter;
 import jp.wasabeef.recyclerview.adapters.ScaleInAnimationAdapter;

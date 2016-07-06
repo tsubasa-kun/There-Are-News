@@ -1,4 +1,4 @@
-package com.love_cookies.there_are_news.View;
+package com.love_cookies.there_are_news.View.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

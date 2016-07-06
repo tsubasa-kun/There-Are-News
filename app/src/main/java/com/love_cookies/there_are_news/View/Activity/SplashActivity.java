@@ -1,4 +1,4 @@
-package com.love_cookies.there_are_news.View;
+package com.love_cookies.there_are_news.View.Activity;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.love_cookies.cookie_library.Activity.BaseActivity;
 import com.love_cookies.there_are_news.R;
+import com.love_cookies.there_are_news.View.Activity.MainActivity;
 
 import org.xutils.view.annotation.ContentView;
 
