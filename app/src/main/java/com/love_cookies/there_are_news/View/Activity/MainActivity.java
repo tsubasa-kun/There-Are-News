@@ -3,6 +3,7 @@ package com.love_cookies.there_are_news.View.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
@@ -16,7 +17,6 @@ import android.view.View;
 
 import com.love_cookies.cookie_library.Activity.BaseActivity;
 import com.love_cookies.cookie_library.Application.ActivityCollections;
-import com.love_cookies.cookie_library.Utils.ToastUtils;
 import com.love_cookies.there_are_news.R;
 import com.love_cookies.there_are_news.View.Adapter.FragmentAdapter;
 import com.love_cookies.there_are_news.View.Fragment.ListFragment;
@@ -155,7 +155,7 @@ public class MainActivity extends BaseActivity {
             if (drawerLayout.isDrawerOpen(navigationView)) {//如果菜单打开就收起菜单
                 drawerLayout.closeDrawers();
             } else if ((System.currentTimeMillis() - exitTime) > 2000) {//点击两次退出逻辑
-                ToastUtils.show(getApplicationContext(), R.string.exit_tip);
+                Snackbar.make(drawerLayout, R.string.exit_tip, Snackbar.LENGTH_SHORT).show();
                 exitTime = System.currentTimeMillis();
             } else {
                 ActivityCollections.getInstance().finishAllActivity();
