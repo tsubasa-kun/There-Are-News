@@ -2,5 +2,4 @@
     <string name="app_name">号外！号外！</string>
 
     <string name="exit_tip">再次点击退出应用</string>
-    <string name="title_activity_sub">SubActivity</string>
 </resources>
