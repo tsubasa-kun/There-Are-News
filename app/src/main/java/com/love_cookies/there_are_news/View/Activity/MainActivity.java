@@ -20,6 +20,7 @@ import com.love_cookies.cookie_library.Application.ActivityCollections;
 import com.love_cookies.there_are_news.R;
 import com.love_cookies.there_are_news.View.Adapter.FragmentAdapter;
 import com.love_cookies.there_are_news.View.Fragment.ListFragment;
+import com.love_cookies.there_are_news.View.Interface.IMain;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -33,7 +34,7 @@ import java.util.List;
  * App主页
  */
 @ContentView(R.layout.activity_main)
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements IMain {
 
     private long exitTime;
 
@@ -64,6 +65,7 @@ public class MainActivity extends BaseActivity {
     /**
      * 初始化标题栏
      */
+    @Override
     public void initActionBar() {
         setSupportActionBar(toolbar);
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.app_name, R.string.app_name);
@@ -75,7 +77,8 @@ public class MainActivity extends BaseActivity {
     /**
      * 初始化菜单视图
      */
-    private void initNavigationView() {
+    @Override
+    public void initNavigationView() {
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -90,6 +93,7 @@ public class MainActivity extends BaseActivity {
     /**
      * 初始化内容
      */
+    @Override
     public void initContent() {
         List<String> titles = new ArrayList<>();
         titles.add("Tab 1");
